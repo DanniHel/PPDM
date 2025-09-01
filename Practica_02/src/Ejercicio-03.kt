@@ -1,3 +1,13 @@
+/*
+Descripción:
+Jerarquía de clases para figuras geométricas que calculan
+área y perímetro (Shape, Cuadrado, Círculo, Rectángulo).
+
+Autor: Danny Quispe Cjuiro
+Fecha de creación: 31/08/2025
+Fecha última modificación: 31/08/2025
+*/
+
 import kotlin.math.pow
 
 abstract class Shape(val nombre: String){
