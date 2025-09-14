@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgViewMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_music_foreground"
+        android:layout_marginBottom="24dp"
+        />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play01"
+        app:icon="@drawable/ic_play01"
+        />
+
+    <Button
+        android:id="@+id/btnPausa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPause01"
+        app:icon="@drawable/ic_pause01"
+        />
+
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:src="@drawable/ic_stop01"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/txtReproducir"
+        />
+
+</LinearLayout>
