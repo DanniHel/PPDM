@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CicloDeVidaApp</string>
+    <string name="txtContador">Contador: 0</string>
 </resources>

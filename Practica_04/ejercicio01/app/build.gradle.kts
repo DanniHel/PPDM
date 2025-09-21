@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ciclodevidaapp"
+    namespace = "com.example.ejercicio_01"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.ciclodevidaapp"
+        applicationId = "com.example.ejercicio_01"
         minSdk = 33
         targetSdk = 36
         versionCode = 1
