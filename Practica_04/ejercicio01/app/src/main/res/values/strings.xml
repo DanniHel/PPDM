@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ejercicio-01</string>
+    <string name="msg_tituloFormulario">FORMULARIO</string>
+    <string name="msg_formNombre0">Nombre: </string>
+    <string name="msg_formNombre1">Escribe tu nombre ...</string>
+    <string name="msg_formEdad0">Edad:</string>
+    <string name="msg_formCiudad0">Ciudad:</string>
+    <string name="msg_formCorreo0">"Correo:</string>
+    <string name="msg_formEdad1">Escribe tu edad ...</string>
+    <string name="msg_formCiudad1">Ciudad ...</string>
+    <string name="msg_formCorreo1">Tu Correo ...</string>
+    <string name="msg_btnContinuar">Continuar</string>
 </resources>

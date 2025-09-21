@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormularioActivity">
+
+    <!-- LINEAS GUIA -->
+    <!-- LINEAS VERTICALES -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideStart_1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideEnd_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideStart_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+    <!-- LINEAS HORIZONTAL -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideTop_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideBottom_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideBottom_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <!-- CONTENIDO | TITULO -->
+
+    <TextView
+        android:id="@+id/txtTituloForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_tituloFormulario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideStart_1"
+        app:layout_constraintEnd_toEndOf="@+id/guideEnd_1"
+        app:layout_constraintBottom_toTopOf="@+id/guideTop_1"
+        app:layout_constraintVertical_bias="0.9"
+        />
+
+    <!-- CONTENIDO | DATOS TEXTO -->
+    <TextView
+        android:id="@+id/txtNombre0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_formNombre0"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideTop_1"
+        app:layout_constraintStart_toStartOf="@+id/guideStart_1"
+        app:layout_constraintEnd_toEndOf="@+id/guideStart_2"
+        app:layout_constraintBottom_toTopOf="@+id/txtEdad0"
+
+        />
+
+    <TextView
+        android:id="@+id/txtEdad0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_formEdad0"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre0"
+        app:layout_constraintStart_toStartOf="@+id/guideStart_1"
+        app:layout_constraintEnd_toEndOf="@+id/guideStart_2"
+        app:layout_constraintBottom_toTopOf="@+id/txtCiudad0"
+        />
+
+    <TextView
+        android:id="@+id/txtCiudad0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_formCiudad0"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad0"
+        app:layout_constraintStart_toStartOf="@+id/guideStart_1"
+        app:layout_constraintEnd_toEndOf="@+id/guideStart_2"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreo0"
+        />
+
+    <TextView
+        android:id="@+id/txtCorreo0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_formCorreo0"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtCiudad0"
+        app:layout_constraintStart_toStartOf="@+id/guideStart_1"
+        app:layout_constraintEnd_toEndOf="@+id/guideStart_2"
+        app:layout_constraintBottom_toTopOf="@+id/guideBottom_2"
+        />
+
+    <!-- CONTENIDO | FORMULARIO -->
+
+    <EditText
+        android:id="@+id/txtNombre1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/msg_formNombre1"
+        android:textSize="14sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideTop_1"
+        app:layout_constraintStart_toEndOf="@+id/guideStart_2"
+        app:layout_constraintEnd_toEndOf="@+id/guideEnd_1"
+        app:layout_constraintBottom_toTopOf="@+id/txtEdad1"
+
+        />
+
+    <EditText
+        android:id="@+id/txtEdad1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/msg_formEdad1"
+        android:textSize="14sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre1"
+        app:layout_constraintStart_toEndOf="@+id/guideStart_2"
+        app:layout_constraintEnd_toEndOf="@+id/guideEnd_1"
+        app:layout_constraintBottom_toTopOf="@+id/txtCiudad1"
+        />
+
+    <EditText
+        android:id="@+id/txtCiudad1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/msg_formCiudad1"
+        android:textSize="14sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad1"
+        app:layout_constraintStart_toEndOf="@+id/guideStart_2"
+        app:layout_constraintEnd_toEndOf="@+id/guideEnd_1"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreo1"
+        />
+
+    <EditText
+        android:id="@+id/txtCorreo1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/msg_formCorreo1"
+        android:textSize="14sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtCiudad1"
+        app:layout_constraintStart_toEndOf="@+id/guideStart_2"
+        app:layout_constraintEnd_toEndOf="@+id/guideEnd_1"
+        app:layout_constraintBottom_toTopOf="@+id/guideBottom_2"
+        />
+
+    <!-- CONTENIDO | BOTONES -->
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_btnContinuar"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/guideBottom_1"
+        app:layout_constraintEnd_toStartOf="@+id/guideEnd_1"
+        app:layout_constraintStart_toStartOf="@+id/guideStart_1"
+        app:layout_constraintTop_toTopOf="@+id/guideBottom_2"
+        app:layout_constraintVertical_bias="0.9"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
