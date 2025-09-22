@@ -10,4 +10,7 @@
     <string name="msg_formCiudad1">Ciudad ...</string>
     <string name="msg_formCorreo1">Tu Correo ...</string>
     <string name="msg_btnContinuar">Continuar</string>
+    <string name="msg_TituloResumen">Datos</string>
+    <string name="msg_ResumenConfirmar">Confirmar</string>
+    <string name="msg_ResumenEditar">Editar</string>
 </resources>
