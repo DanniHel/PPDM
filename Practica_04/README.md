@@ -1,8 +1,8 @@
-\# Práctica 4: Comunicación entre Actividades
+# Práctica 4: Comunicación entre Actividades
 
 
 
-\### Autor: Danny Quispe Cjuiro  
+### Autor: Danny Quispe Cjuiro  
 
 Fecha de creación: 22/09/2025  
 
@@ -14,23 +14,11 @@ Fecha de creación: 22/09/2025
 
 
 
-\## Objetivo general
+## Objetivo general
 
 
 
-Practicar la \*\*comunicación entre actividades en Android\*\* utilizando `Intent`, objetos `Serializable`, y el manejo de respuestas con `registerForActivityResult`. Además, se aplican técnicas para conservar datos al rotar la pantalla (`onSaveInstanceState`).
-
-
-
----
-
-
-
-\## Contenido de la práctica
-
-
-
-La práctica se divide en \*\*dos ejercicios\*\*, cada uno representando un caso de uso distinto:
+Practicar la **comunicación entre actividades en Android** utilizando `Intent`, objetos `Serializable`, y el manejo de respuestas con `registerForActivityResult`. Además, se aplican técnicas para conservar datos al rotar la pantalla (`onSaveInstanceState`).
 
 
 
@@ -38,11 +26,23 @@ La práctica se divide en \*\*dos ejercicios\*\*, cada uno representando un caso
 
 
 
-\## Ejercicio 1: Editor de perfil con confirmación
+## Contenido de la práctica
 
 
 
-\### Descripción
+La práctica se divide en **dos ejercicios**, cada uno representando un caso de uso distinto:
+
+
+
+---
+
+
+
+## Ejercicio 1: Editor de perfil con confirmación
+
+
+
+### Descripción
 
 
 
@@ -50,33 +50,33 @@ Aplicación que permite al usuario llenar un perfil con los siguientes campos:
 
 
 
-\- Nombre
+- Nombre
 
-\- Edad
+- Edad
 
-\- Ciudad
+- Ciudad
 
-\- Correo electrónico
-
-
-
-\### Actividades
+- Correo electrónico
 
 
 
-\- \*\*FormularioActivity\*\*  
-
-&nbsp; Muestra los campos del formulario y un botón \*\*“Continuar”\*\*.
+### Actividades
 
 
 
-\- \*\*ResumenActivity\*\*  
+- **FormularioActivity**  
+
+&nbsp; Muestra los campos del formulario y un botón **“Continuar”**.
+
+
+
+- **ResumenActivity**  
 
 &nbsp; Muestra un resumen de los datos ingresados y permite:
 
-&nbsp; - \*\*Confirmar\*\*: Regresa a la pantalla principal y muestra un `Toast` de éxito.
+&nbsp; - **Confirmar**: Regresa a la pantalla principal y muestra un `Toast` de éxito.
 
-&nbsp; - \*\*Volver a editar\*\*: Retorna al formulario con los datos previos.
+&nbsp; - **Volver a editar**: Retorna al formulario con los datos previos.
 
 
 
@@ -86,11 +86,11 @@ Aplicación que permite al usuario llenar un perfil con los siguientes campos:
 
 
 
-\## Ejercicio 2: Editor de nota rápida
+## Ejercicio 2: Editor de nota rápida
 
 
 
-\### Descripción
+### Descripción
 
 
 
@@ -98,41 +98,23 @@ Aplicación que permite al usuario escribir una nota en un campo multilineal y d
 
 
 
-\### Actividades
+### Actividades
 
 
 
-\- \*\*EditorActivity\*\*  
+- **EditorActivity**  
 
-&nbsp; Muestra un `EditText` multilinea para la nota y un botón \*\*“Compartir”\*\*.
+&nbsp; Muestra un `EditText` multilinea para la nota y un botón **“Compartir”**.
 
 
 
-\- \*\*OpcionesActivity\*\*  
+- **OpcionesActivity**  
 
 &nbsp; Muestra la nota y permite:
 
-&nbsp; - \*\*Compartir por correo\*\*: Muestra un `Toast` de confirmación.
+&nbsp; - **Compartir por correo**: Muestra un `Toast` de confirmación.
 
-&nbsp; - \*\*Editar de nuevo\*\*: Vuelve a la actividad anterior conservando el texto.
-
-
-
----
-
-
-
-\## Tecnologías usadas
-
-
-
-\- Kotlin
-
-\- Android Studio
-
-\- ConstraintLayout
-
-\- Android SDK 31+
+&nbsp; - **Editar de nuevo**: Vuelve a la actividad anterior conservando el texto.
 
 
 
@@ -140,19 +122,17 @@ Aplicación que permite al usuario escribir una nota en un campo multilineal y d
 
 
 
-\## Aprendizajes clave
+## Tecnologías usadas
 
 
 
-\- Enviar y recibir datos entre actividades.
+- Kotlin
 
-\- Uso de objetos serializables para pasar múltiples datos.
+- Android Studio
 
-\- Registro de resultados con `ActivityResultLauncher`.
+- ConstraintLayout
 
-\- Manejo del ciclo de vida con `onSaveInstanceState`.
-
-\- Diseño de interfaces usando ConstraintLayout y guidelines.
+- Android SDK 31+
 
 
 
@@ -160,7 +140,27 @@ Aplicación que permite al usuario escribir una nota en un campo multilineal y d
 
 
 
-\## ✅ Estado del proyecto
+## Aprendizajes clave
+
+
+
+- Enviar y recibir datos entre actividades.
+
+- Uso de objetos serializables para pasar múltiples datos.
+
+- Registro de resultados con `ActivityResultLauncher`.
+
+- Manejo del ciclo de vida con `onSaveInstanceState`.
+
+- Diseño de interfaces usando ConstraintLayout y guidelines.
+
+
+
+---
+
+
+
+## ✅ Estado del proyecto
 
 
 
