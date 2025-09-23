@@ -1,3 +1,13 @@
+/**
+ * EDICIÓN DE PERFIL CON CONFIRMACIÓN
+ *
+ * Descripción: Actividad para mostrar los datos del usuario y confirmar o editar.
+ * Autor: Danny Quispe Cjuiro
+ * Fecha creación: 22/09/2025
+ * Fecha última modificación: 22/09/2025
+ */
+
+
 package com.example.ejercicio_01
 
 import android.content.Intent

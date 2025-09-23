@@ -1,3 +1,11 @@
+/**
+ *EDICIÓN DE PERFIL CON CONFIRMACIÓN
+ *
+ * Descripción: Actividad para capturar datos de un usuario (Nombre, Edad, Ciudad, Correo)
+ * Autor: Danny Quispe Cjuiro
+ * Fecha creación: 22/09/2025
+ * Fecha última modificación: 22/09/2025
+ */
 package com.example.ejercicio_01
 
 import android.content.Intent
