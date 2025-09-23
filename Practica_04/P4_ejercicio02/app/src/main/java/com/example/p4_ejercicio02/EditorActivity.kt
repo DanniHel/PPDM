@@ -1,3 +1,10 @@
+/**
+ * Descripción: Actividad para capturar una nota del usuario y enviarla a otra actividad para confirmar o editar.
+ * Autor: Danny Quispe Cjuiro
+ * Fecha creación: 22/09/2025
+ * Fecha última modificación: 22/09/2025
+ */
+
 package com.example.p4_ejercicio02
 
 import android.content.Intent
