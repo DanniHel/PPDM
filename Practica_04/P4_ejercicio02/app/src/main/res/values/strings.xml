@@ -3,4 +3,7 @@
     <string name="msg_TituloEditor">Escribe una nota:</string>
     <string name="msg_hintNota0">Escribe tu mensage ...</string>
     <string name="msg_btnCompartir">Compartir</string>
+    <string name="msg_TituloOpciones">Mensage</string>
+    <string name="msg_btnCompartirCorreo">Compartir por Correo</string>
+    <string name="msg_btnEditar">Editar</string>
 </resources>
