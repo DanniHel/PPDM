@@ -4,7 +4,7 @@
  * Descripción: Actividad para capturar datos de un usuario (Nombre, Edad, Ciudad, Correo)
  * Autor: Danny Quispe Cjuiro
  * Fecha creación: 22/09/2025
- * Fecha última modificación: 22/09/2025
+ * Fecha última modificación: 23/09/2025
  */
 package com.example.ejercicio_01
 
@@ -58,14 +58,15 @@ class FormularioActivity : AppCompatActivity() {
             val ciudad = txtCiudad.text.toString()
             val correo = txtCorreo.text.toString()
 
+            // instancia del dataclass
+            val usuario = Usuario(nombre,edad,ciudad,correo)
+
             // crea un Intent para iniciar la actividad ResumenActivity
             val enviar = Intent(this, ResumenActivity::class.java)
 
             // agregamos los datos al intent para pasarlo a la siguiente actividad
-            enviar.putExtra("NOMBRE",nombre)
-            enviar.putExtra("EDAD",edad)
-            enviar.putExtra("CIUDAD",ciudad)
-            enviar.putExtra("CORREO",correo)
+            enviar.putExtra("USUARIO",usuario)
+
 
             // Lanza la nueva actividad usando el launcher registrado anteriormente
             launcher.launch(enviar)

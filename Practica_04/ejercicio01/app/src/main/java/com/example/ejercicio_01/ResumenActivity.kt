@@ -4,7 +4,7 @@
  * Descripción: Actividad para mostrar los datos del usuario y confirmar o editar.
  * Autor: Danny Quispe Cjuiro
  * Fecha creación: 22/09/2025
- * Fecha última modificación: 22/09/2025
+ * Fecha última modificación: 23/09/2025
  */
 
 
@@ -33,16 +33,17 @@ class ResumenActivity : AppCompatActivity() {
         val btnConfirmar = findViewById<Button>(R.id.btnConfirmar)
 
         // Recuperación de los datos enviados desde FormularioActivity mediante el Intent
-        val nombre = intent.getStringExtra("NOMBRE")
-        val edad = intent.getIntExtra("EDAD", -1)
-        val ciudad = intent.getStringExtra("CIUDAD")
-        val correo = intent.getStringExtra("CORREO")
 
-        // Muestra los datos en los TextView, formateando el texto con etiquetas
-        txtNombre.text = "Nombre: $nombre"
-        txtEdad.text = "Edad: $edad"
-        txtCiudad.text = "Ciudad: $ciudad"
-        txtCorreo.text = "Correo: $correo"
+        val usuario = intent.getSerializableExtra("USUARIO") as? Usuario
+
+        usuario?.let {
+            // Muestra los datos en los TextView, formateando el texto con etiquetas
+            txtNombre.text = "Nombre: ${it.nombre}"
+            txtEdad.text = "Edad: ${it.edad}"
+            txtCiudad.text = "Ciudad: ${it.ciudad}"
+            txtCorreo.text = "Correo: ${it.correo}"
+
+        }
 
         // Acción al pulsar el botón "Editar"
         btnEditar.setOnClickListener {
