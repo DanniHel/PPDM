@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practica_05</string>
+    <string name="msg_tituloMain">Configurador de Pedidos</string>
+    <string name="msg_btnNuevoPedido">Nuevo Pedido</string>
+</resources>
