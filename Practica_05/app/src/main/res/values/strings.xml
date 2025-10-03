@@ -2,4 +2,6 @@
     <string name="app_name">Practica_05</string>
     <string name="msg_tituloMain">Configurador de Pedidos</string>
     <string name="msg_btnNuevoPedido">Nuevo Pedido</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
