@@ -13,4 +13,8 @@
     <string name="msg_bebidas">Bebida - $2.00</string>
     <string name="msg_papas">Papas Fritas - $3.00</string>
     <string name="msg_postre">Postre - $4.00</string>
+    <string name="msg_tituloResumen">Resumen de tu Pedido</string>
+    <string name="lblExtras">Extras:</string>
+    <string name="msg_confirmarPedido">Confirmar Pedido</string>
+    <string name="msg_editarPedido">Editar Pedido</string>
 </resources>
