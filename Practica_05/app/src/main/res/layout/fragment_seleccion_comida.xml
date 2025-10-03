@@ -4,10 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SeleccionComidaFragment">
+    android:padding="25dp"
+    tools:context=".SeleccionComidaFragment"
+    >
 
     <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"
+        />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95"
+        />
 
     <TextView
         android:id="@+id/textView"
@@ -20,7 +36,7 @@
         app:layout_constraintBottom_toTopOf="@+id/radioGroupComida"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideLineTop"
         app:layout_constraintVertical_bias="0.2" />
 
     <RadioGroup
@@ -32,7 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.1"
         >
 
         <RadioButton
@@ -68,10 +83,11 @@
         android:text="@string/msg_siguiente"
         android:textSize="16sp"
 
-        app:layout_constraintVertical_bias="0.15"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideLineButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radioGroupComida" />
+        app:layout_constraintTop_toTopOf="@+id/guideLineTop"
+        app:layout_constraintVertical_bias="0.50" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
