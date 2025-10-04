@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import androidx.core.os.bundleOf
 
 class SeleccionComidaFragment : Fragment(R.layout.fragment_seleccion_comida) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -28,6 +29,19 @@ class SeleccionComidaFragment : Fragment(R.layout.fragment_seleccion_comida) {
                 // Obtener el texto del RadioButton seleccionado
                 val seleccionText = radioBoton.text.toString()
 
+
+                requireActivity().supportFragmentManager.beginTransaction().apply {
+                    // enviar datos al otro fragmento
+
+                    val datos = bundleOf("comida" to seleccionText)
+
+                    val fragmentoExtras = SeleccionExtrasFragment()
+                    fragmentoExtras.arguments = datos
+
+                    replace(R.id.iniFragmento, fragmentoExtras)
+                    addToBackStack("COMIDA")
+                    commit()
+                }
             }
         }
     }
