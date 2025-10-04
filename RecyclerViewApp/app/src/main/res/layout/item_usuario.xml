@@ -8,6 +8,9 @@
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp"
     app:cardBackgroundColor="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:longClickable="true"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout

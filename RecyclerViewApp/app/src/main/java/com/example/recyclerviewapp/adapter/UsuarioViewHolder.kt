@@ -1,11 +1,11 @@
 package com.example.recyclerviewapp.adapter
 
-import android.app.AlertDialog
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewapp.R
 import com.example.recyclerviewapp.Usuario
@@ -26,7 +26,7 @@ class UsuarioViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         txtEdad.text = "Edad: ${user.edad}"
         txtCorreo.text = user.email
 
-        // Botón eliminar
+        // Botón eliminar (click directo en el icono)
         btnDelete.setOnClickListener {
             val pos = bindingAdapterPosition
             if (pos != RecyclerView.NO_POSITION) {
@@ -34,7 +34,7 @@ class UsuarioViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             }
         }
 
-        // Long click -> menú editar/eliminar
+        // 👇 Aquí está el long click que abre el menú
         itemView.setOnLongClickListener {
             val pos = bindingAdapterPosition
             if (pos != RecyclerView.NO_POSITION) {
@@ -42,8 +42,8 @@ class UsuarioViewHolder(view: View) : RecyclerView.ViewHolder(view) {
                     .setTitle("Acción")
                     .setItems(arrayOf("Editar", "Eliminar")) { _, which ->
                         when (which) {
-                            0 -> showEditDialog(user, pos, onEdit)
-                            1 -> onDelete(pos)
+                            0 -> showEditDialog(user, pos, onEdit) // Editar
+                            1 -> onDelete(pos) // Eliminar
                         }
                     }
                     .show()
@@ -60,7 +60,7 @@ class UsuarioViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val editEdad = dialogView.findViewById<EditText>(R.id.editEdad)
         val editCorreo = dialogView.findViewById<EditText>(R.id.editCorreo)
 
-        // valores actuales
+        // Prellenar datos
         editNombre.setText(user.nombre)
         editEdad.setText(user.edad.toString())
         editCorreo.setText(user.email)
