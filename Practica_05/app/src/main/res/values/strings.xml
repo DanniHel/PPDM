@@ -17,4 +17,5 @@
     <string name="lblExtras">Extras:</string>
     <string name="msg_confirmarPedido">Confirmar Pedido</string>
     <string name="msg_editarPedido">Editar Pedido</string>
+    <string name="msg_total">Total: $0.00</string>
 </resources>

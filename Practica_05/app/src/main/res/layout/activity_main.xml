@@ -8,10 +8,9 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/contenerdorFragment"
+        android:id="@+id/iniFragmento"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         />
 
 

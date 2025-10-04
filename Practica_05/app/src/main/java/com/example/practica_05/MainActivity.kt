@@ -9,5 +9,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //iniciar fragmento dentro de una actividad
+        supportFragmentManager.beginTransaction().apply {
+            add(R.id.iniFragmento, InicioFragment())
+            commit()
+        }
     }
 }
