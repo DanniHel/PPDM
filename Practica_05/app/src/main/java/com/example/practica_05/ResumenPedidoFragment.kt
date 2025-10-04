@@ -26,5 +26,12 @@ class ResumenPedidoFragment : Fragment(R.layout.fragment_resumen_pedido) {
 
         lblComida.text = comida
         lblExtra.text = extra?.joinToString("\n")
+
+        btnEditar.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
+        }
+        btnConfirmar.setOnClickListener {
+            Toast.makeText(context,"Pedido confirmado", Toast.LENGTH_LONG).show()
+        }
     }
 }
