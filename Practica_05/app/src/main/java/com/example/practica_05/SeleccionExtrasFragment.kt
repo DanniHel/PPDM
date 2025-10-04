@@ -43,6 +43,7 @@ class SeleccionExtrasFragment : Fragment(R.layout.fragment_seleccion_extras) {
                 val resumenFragmento = ResumenPedidoFragment()
                 resumenFragmento.arguments = datos
 
+                // reemplazar con ResumenPedidoFragmento
                 replace(R.id.iniFragmento,resumenFragmento)
                 addToBackStack("EXTRA")
                 commit()
