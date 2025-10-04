@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 
 class ResumenPedidoFragment : Fragment(R.layout.fragment_resumen_pedido) {
@@ -16,7 +18,13 @@ class ResumenPedidoFragment : Fragment(R.layout.fragment_resumen_pedido) {
 
         val mensaje = "Seleccionaste: ${extra?.joinToString(", ")}"
 
-        Toast.makeText(context,"$comida", Toast.LENGTH_LONG).show()
-        Toast.makeText(context, mensaje, Toast.LENGTH_SHORT).show()
+        // referencias a las vistas
+        val lblComida = view.findViewById<TextView>(R.id.lblComidas)
+        val lblExtra = view.findViewById<TextView>(R.id.lblExtras)
+        val btnEditar = view.findViewById<Button>(R.id.btnEditarPedido)
+        val btnConfirmar = view.findViewById<Button>(R.id.btnConfirmarPedido)
+
+        lblComida.text = comida
+        lblExtra.text = extra?.joinToString("\n")
     }
 }

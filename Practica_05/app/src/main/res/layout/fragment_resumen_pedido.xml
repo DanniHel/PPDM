@@ -19,23 +19,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/tvExtrasSeleccionados"
+        app:layout_constraintBottom_toTopOf="@+id/lblComidas"
         app:layout_constraintVertical_bias="0.2"
         />
 
     <TextView
-        android:id="@+id/tvExtrasSeleccionados"
+        android:id="@+id/lblComidas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lblExtras"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvTotal"
+        app:layout_constraintBottom_toTopOf="@+id/lblExtras"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/tvTotal"
+        android:id="@+id/lblExtras"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/msg_total"
@@ -44,7 +44,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvExtrasSeleccionados"
+        app:layout_constraintTop_toBottomOf="@+id/lblComidas"
         />
 
     <LinearLayout
@@ -56,7 +56,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvTotal"
+        app:layout_constraintTop_toTopOf="@+id/lblExtras"
         >
 
         <Button
