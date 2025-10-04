@@ -1,14 +1,14 @@
-\# Práctica 5 - Fragments y Navegación
+# Práctica 5 - Fragments y Navegación
 
 
 
-\## Descripción
+## Descripción
 
 Configurador de pedidos de comida usando Fragments en Android con Kotlin.
 
 
 
-\## Estructura
+## Estructura
 
 | Fragment | Función |
 
@@ -24,35 +24,35 @@ Configurador de pedidos de comida usando Fragments en Android con Kotlin.
 
 
 
-\## Flujo
+## Flujo
 
-Inicio → Seleccionar Comida → Elegir Extras → Resumen → \[Confirmar/Editar]
-
-
+Inicio → Seleccionar Comida → Elegir Extras → Resumen → [Confirmar/Editar]
 
 
 
-\## Funcionalidades
-
-\- \*\*Navegación\*\*: `FragmentManager` + `replace()` + `addToBackStack()`
-
-\- \*\*Paso de datos\*\*: `Bundle` con `bundleOf()`
-
-\- \*\*UI\*\*: RadioButtons, CheckBoxes, Buttons
-
-\- \*\*Navegación hacia atrás\*\*: `popBackStack()`
 
 
+## Funcionalidades
 
-\## Tecnologías
+- **Navegación**: `FragmentManager` + `replace()` + `addToBackStack()`
 
-\- Kotlin
+- **Paso de datos**: `Bundle` con `bundleOf()`
 
-\- Fragments
+- **UI**: RadioButtons, CheckBoxes, Buttons
 
-\- Bundle para datos
+- **Navegación hacia atrás**: `popBackStack()`
 
-\- Transaction Manager
+
+
+## Tecnologías
+
+- Kotlin
+
+- Fragments
+
+- Bundle para datos
+
+- Transaction Manager
 
 
 
@@ -60,7 +60,7 @@ Inicio → Seleccionar Comida → Elegir Extras → Resumen → \[Confirmar/Edit
 
 
 
-\*\*Autor\*\*: Danny Quispe Cjuiro  
+**Autor**: Danny Quispe Cjuiro  
 
-\*\*Fecha\*\*: Octubre 2025
+**Fecha**: Octubre 2025
 
