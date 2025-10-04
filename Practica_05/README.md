@@ -10,17 +10,13 @@ Configurador de pedidos de comida usando Fragments en Android con Kotlin.
 
 ## Estructura
 
-| Fragment | Función |
+| Fragment                  | Función                   |
+|---------------------------|---------------------------|
+| `InicioFragment`          | Pantalla inicial          |
+| `SeleccionComidaFragment` | Elegir comida principal   |
+| `SeleccionExtrasFragment` | Seleccionar complementos  |
+| `ResumenPedidoFragment`   | Ver y confirmar pedido    |
 
-|----------|---------|
-
-| `InicioFragment` | Pantalla inicial |
-
-| `SeleccionComidaFragment` | Elegir comida principal |
-
-| `SeleccionExtrasFragment` | Seleccionar complementos |
-
-| `ResumenPedidoFragment` | Ver y confirmar pedido |
 
 
 
